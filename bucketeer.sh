@@ -9,12 +9,10 @@ echo " | ||  __/ | | | \__ \.___/ / | |_) | |_| | (__|   <  __/ ||  __/  __/ |  
 echo "  \__\___|_| |_| |___/\____/  |_.__/ \__,_|\___|_|\_\___|\__\___|\___|_|   "
 echo ""
 
-NAME=$1
-
-if [[ -z $NAME ]]; then
-  echo "Error: no company specified."
+if [[ -z $@ ]]; then
+  echo "Error: no targets specified."
   echo ""
-  echo "Usage: ./bucketeer.sh <company_name>"
+  echo "Usage: ./bucketeer.sh <target> <target>"
   exit 1
 fi
 
@@ -78,10 +76,9 @@ print_results() {
   echo "Scanning done. Found $NR_OF_RESULTS results."
 }
 
-main() {
+for NAME in $@
+do
   test_bucket $NAME
   while read line ; do check_prefix $line ; done < ./common_bucket_prefixes.txt
   print_results
-}
-
-main
+done
