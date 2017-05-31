@@ -54,7 +54,6 @@ test_bucket() {
 check_prefix() {
   local bucket_part="$1"
 
-  test_bucket "$NAME"
   test_bucket "$NAME-$bucket_part"
   test_bucket "$NAME-s3-$bucket_part"
   test_bucket "$bucket_part-$NAME"
@@ -69,6 +68,7 @@ check_prefix() {
 }
 
 main() {
+  test_bucket $NAME
   while read line ; do check_prefix $line ; done < ./common_bucket_prefixes.txt
 }
 
