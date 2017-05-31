@@ -1,4 +1,4 @@
-# Teh S3 Bucketeesr
+# Teh S3 Bucketeers
 
 
 ## Installation
