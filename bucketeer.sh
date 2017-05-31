@@ -14,7 +14,7 @@ NAME=$1
 if [[ -z $NAME ]]; then
   echo "Error: no company specified."
   echo ""
-  echo "Usage: ./buggy.sh <company_name>"
+  echo "Usage: ./bucketeer.sh <company_name>"
   exit 1
 fi
 
