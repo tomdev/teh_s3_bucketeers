@@ -67,9 +67,21 @@ check_prefix() {
   test_bucket "$bucket_part-production.$NAME.com"
 }
 
+print_results() {
+  if [[ -e $RESULT_FILE ]]; then
+    NR_OF_RESULTS=$(cat $RESULT_FILE | wc -l)
+  else
+    NR_OF_RESULTS=0
+  fi
+
+  echo ""
+  echo "Scanning done. Found $NR_OF_RESULTS results."
+}
+
 main() {
   test_bucket $NAME
   while read line ; do check_prefix $line ; done < ./common_bucket_prefixes.txt
+  print_results
 }
 
 main
