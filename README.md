@@ -29,8 +29,10 @@ aws_secret_access_key = <secret>
 
 ## Usage
 
+You can test multiple targets at the same time, use a space as a delimiter.
+
 ```
-./bucketeer.sh <target>
+./bucketeer.sh <target> <target>
 ```
 
 ## Contributing
