@@ -16,8 +16,6 @@ if [[ -z $@ ]]; then
   exit 1
 fi
 
-RESULT_FILE=results.txt
-
 test_bucket() {
   bucket_name=$1
 
@@ -78,6 +76,7 @@ print_results() {
 
 for NAME in $@
 do
+  RESULT_FILE="results-$NAME-$(date +%Y-%m-%d_%H:%M).txt"
   test_bucket $NAME
   while read line ; do check_prefix $line ; done < ./common_bucket_prefixes.txt
   print_results
