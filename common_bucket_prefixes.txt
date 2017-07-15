@@ -63,6 +63,7 @@ documents
 elasticsearch
 engineer
 engineering
+email-assets
 files
 fileserv
 fileserver
