@@ -115,6 +115,7 @@ ops
 package
 packages
 partners
+pdf-bucket
 photos
 pics
 presentations
