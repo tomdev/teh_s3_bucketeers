@@ -38,6 +38,9 @@ You can test multiple targets at the same time, use a space as a delimiter.
 ./bucketeer.sh <target> <target>
 ```
 
+A result file named `results-<target>-<timestamp>.txt` will be created when a accessible bucket has been found.
+
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/tomdev/teh_s3_bucketeers.
