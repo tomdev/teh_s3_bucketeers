@@ -30,6 +30,7 @@ betas
 billing
 bucket
 bugbounty
+business-prod
 bugs
 bugzilla
 build
@@ -114,6 +115,9 @@ ops
 package
 packages
 partners
+pdf-bucket
+pubs-static
+public
 photos
 pics
 presentations
@@ -127,11 +131,13 @@ research
 reseller
 reserved
 rest
+s2-pdfs
 s3connectortest
 share
 splunk
 spreadsheets
 static
+static-files
 statistics
 stats
 subversion
@@ -161,5 +167,6 @@ webassets
 webdata
 website
 websiteassets
+www-assets
 webstatic
 windows
