@@ -134,6 +134,7 @@ share
 splunk
 spreadsheets
 static
+static-files
 statistics
 stats
 subversion
