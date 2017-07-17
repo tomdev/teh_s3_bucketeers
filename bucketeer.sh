@@ -19,7 +19,7 @@ fi
 AWS_CREDENTIALS_SETUP_DOCUMENTATION_URL="https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html#setup-credentials-setting"
 AWS_CREDENTIALS_FILE=~/.aws/credentials
 
-check_aws_credentials() {
+ensure_aws_credentials() {
   if [[ ! -e $AWS_CREDENTIALS_FILE ]]; then
     echo "Warning: Requried AWS credential file ~/.aws/credentials not found."
     echo ""
@@ -39,8 +39,6 @@ ensure_dependency_installed() {
     exit 1
   fi
 }
-
-
 
 test_bucket() {
   bucket_name=$1
@@ -101,7 +99,7 @@ print_results() {
 }
 
 ensure_dependency_installed aws
-check_aws_credentials
+ensure_aws_credentials
 
 for NAME in $@
 do
