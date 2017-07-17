@@ -16,6 +16,32 @@ if [[ -z $@ ]]; then
   exit 1
 fi
 
+AWS_CREDENTIALS_SETUP_DOCUMENTATION_URL="https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html#setup-credentials-setting"
+AWS_CREDENTIALS_FILE=~/.aws/credentials
+
+check_aws_credentials() {
+  if [[ ! -e $AWS_CREDENTIALS_FILE ]]; then
+    echo "Warning: Requried AWS credential file ~/.aws/credentials not found."
+    echo ""
+    echo "Documentation on how to set up these credentials can be found here:"
+    echo $AWS_CREDENTIALS_SETUP_DOCUMENTATION_URL
+    exit 1
+  fi
+}
+
+ensure_dependency_installed() {
+  dependency=$1
+
+  command -v $dependency >/dev/null
+
+  if [[ "$?" -ne 0 ]]; then
+    echo "Required dependency \"${dependency}\" not installed. Please install and retry."
+    exit 1
+  fi
+}
+
+
+
 test_bucket() {
   bucket_name=$1
 
@@ -73,6 +99,9 @@ print_results() {
   echo ""
   echo "Scanning done. Found $NR_OF_RESULTS results."
 }
+
+ensure_dependency_installed aws
+check_aws_credentials
 
 for NAME in $@
 do
