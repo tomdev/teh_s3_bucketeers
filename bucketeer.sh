@@ -21,7 +21,7 @@ AWS_CREDENTIALS_FILE=~/.aws/credentials
 
 ensure_aws_credentials() {
   if [[ ! -e $AWS_CREDENTIALS_FILE ]]; then
-    echo "Warning: Requried AWS credential file ~/.aws/credentials not found."
+    echo "Warning: Required AWS credential file ${AWS_CREDENTIALS_FILE} not found."
     echo ""
     echo "Documentation on how to set up these credentials can be found here:"
     echo $AWS_CREDENTIALS_SETUP_DOCUMENTATION_URL
