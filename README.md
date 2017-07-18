@@ -38,7 +38,7 @@ You can test multiple targets at the same time, use a space as a delimiter.
 ./bucketeer.sh <target> <target>
 ```
 
-A result file named `results-<target>-<timestamp>.txt` will be created when a accessible bucket has been found.
+A result file named `results-<target>-<timestamp>.txt` will be created when an accessible bucket has been found.
 
 
 ## Contributing
