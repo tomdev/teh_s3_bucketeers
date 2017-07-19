@@ -78,36 +78,24 @@ check_prefix() {
   test_bucket "$bucket_part$NAME"
   test_bucket "$bucket_part-s3-$NAME"
   test_bucket "$bucket_part-production.$NAME.com"
-
   test_bucket "$NAME-s3"
   test_bucket "s3-$NAME"
   test_bucket "$NAME-$bucket_part"
   test_bucket "$NAME-s3-$bucket_part"
-  #dotted patterns
   test_bucket "$NAME.$bucket_part"
   test_bucket "$bucket_part.$NAME"
   test_bucket "$bucket_part.$NAME.com"
-  #dotted patterns + s3
   test_bucket "$bucket_part.s3.$NAME"
   test_bucket "$bucket_part.s3.$NAME.com"
-  #dashed patterns
-  test_bucket "$NAME-$bucket_part"
   test_bucket "$bucket_part-$NAME"
   test_bucket "$bucket_part-$NAME.com"
-  #dotted patterns + s3
-  test_bucket "$bucket_part-s3-$NAME"
   test_bucket "$bucket_part-s3-$NAME.com"
   test_bucket "s3-$bucket_part-$NAME"
   test_bucket "$bucket_part-$NAME-s3"
   test_bucket "$bucket_part-s3.$NAME"
   test_bucket "$bucket_part-s3.$NAME.com"
-  test_bucket "s3-$bucket_part-$NAME"
-  test_bucket "$bucket_part-s3-$NAME"
-  #--- different environments
-  #dotted patterns
   test_bucket "$bucket_part-dev.$NAME"
   test_bucket "$bucket_part-dev.$NAME.com"
-  #dotted patterns + s3
   test_bucket "$bucket_part$NAME-dev"
   test_bucket "$bucket_part-$NAME-dev"
   test_bucket "dev-$bucket_part-$NAME"
@@ -119,8 +107,6 @@ check_prefix() {
   test_bucket "$bucket_part-dev-s3-$NAME.com"
   test_bucket "$bucket_part-dev-s3.$NAME"
   test_bucket "$bucket_part-dev-s3.$NAME.com"
-  test_bucket "$bucket_part-dev.s3.$NAME"
-  test_bucket "$bucket_part-dev.s3.$NAME.com"
   test_bucket "$bucket_part.dev.$NAME.com"
   test_bucket "$bucket_part-$NAME-stage"
   test_bucket "stage-$bucket_part-$NAME"
