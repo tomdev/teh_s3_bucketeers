@@ -41,6 +41,8 @@ club
 clubs
 cluster
 clusters
+cms
+cdn
 company
 conference
 conferencing
