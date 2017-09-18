@@ -14,7 +14,7 @@ Make sure you have AWS credentials set up, see Requirements.
 Clone this repo and you're good to go:
 
 ```
-git clone git@github.com:tomdev/teh_s3_bucketeers.git
+git clone https://github.com/tomdev/teh_s3_bucketeers.git
 ```
 
 ## Requirements
