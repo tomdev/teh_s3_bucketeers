@@ -44,6 +44,7 @@ clusters
 cms
 cdn
 company
+com
 conference
 conferencing
 confidential
@@ -148,6 +149,7 @@ supportmedia
 supportuploads
 stage
 staging
+testassets
 temp
 terraform
 terraformbinaries
@@ -158,6 +160,7 @@ uploads
 users
 ux
 vanitydev
+video
 vanitydevelopment
 vanityproduction
 vanitystaging
