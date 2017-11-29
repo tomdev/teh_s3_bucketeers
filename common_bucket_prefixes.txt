@@ -154,6 +154,7 @@ reserved
 rest
 s2-pdfs
 s3connectortest
+screenshots
 share
 splunk
 spreadsheets
