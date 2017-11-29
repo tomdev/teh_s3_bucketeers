@@ -8,10 +8,13 @@ ansible
 api
 api-production
 apollo
+app
 assets
 assets-portals
 attach
 attachments
+audio
+avatar-live
 avatars
 aws
 aws-logs
@@ -40,6 +43,7 @@ cluster
 clusters
 cms
 com
+communities
 company
 conference
 conferencing
@@ -54,6 +58,7 @@ contracts
 corporate
 coupon
 coupons
+customers
 data
 dataset
 datasets
@@ -66,6 +71,7 @@ developer
 developers
 development
 devops
+digital
 discount
 documents
 elasticsearch
@@ -97,6 +103,7 @@ intranet
 invalid
 investor
 investors
+io
 ios
 kafka
 kbfiles		
@@ -108,6 +115,7 @@ knowledgebase
 knowledgebase
 linux
 loadbalancer
+loadforms
 local
 localhost
 logexport
@@ -117,9 +125,11 @@ mac
 maps		
 maps
 marketing
+mat
 matrix
 maven
 media
+media-upload
 mediauploads
 member
 members
@@ -134,12 +144,15 @@ partners
 pdf-bucket
 pdf-directory
 photos
+photos-production
 pics
 presentations
 prod
 prod-live
 prod-sorted
+product-logos
 production
+production-repository-file
 products
 profiles
 project
@@ -164,6 +177,7 @@ static
 static-files
 statistics
 stats
+store
 subversion
 supportdocs		
 supportdocs
@@ -202,4 +216,5 @@ webstatic
 windows
 wp
 wp-prd
+wp-uploads
 www-assets
