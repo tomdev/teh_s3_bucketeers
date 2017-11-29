@@ -176,6 +176,7 @@ static
 static-files
 statistics
 stats
+store
 subversion
 supportdocs		
 supportdocs
