@@ -201,6 +201,7 @@ vanitydev
 vanitydevelopment
 vanityproduction
 vanitystaging
+versions
 video
 vouchers
 web
