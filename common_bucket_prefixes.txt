@@ -19,6 +19,7 @@ app
 app-img
 apps
 apt
+ass
 asset
 assetmanager
 assets
@@ -27,6 +28,7 @@ attach
 attachment
 attachments
 audio
+audit
 avatar
 avatar-live
 avatars
@@ -237,6 +239,7 @@ members
 mercurial
 misc
 mobile
+mysql
 net
 newsletter
 onboarding
@@ -335,6 +338,7 @@ statistics
 stats
 storage
 store
+storecontent
 studio
 submission
 submissions
