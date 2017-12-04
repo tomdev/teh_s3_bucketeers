@@ -140,6 +140,7 @@ editions
 elasticache
 elasticbeanstalk
 elasticsearch
+elb
 email
 email-assets
 emails
