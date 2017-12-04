@@ -136,6 +136,7 @@ driver
 drivers
 dstore
 dump
+ec2
 editions
 elasticache
 elasticbeanstalk
@@ -195,6 +196,7 @@ invoice
 invoices
 io
 ios
+jira
 kafka
 kbfiles		
 kbfiles
@@ -205,6 +207,7 @@ knowledgebase
 knowledgebase
 lab
 labs
+lambda
 landing
 linux
 loadbalancer
