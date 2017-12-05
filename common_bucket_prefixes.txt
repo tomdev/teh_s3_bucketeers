@@ -21,6 +21,7 @@ apps
 apt
 ass
 asset
+asset-manager
 assetmanager
 assets
 assets-portals
@@ -49,6 +50,7 @@ blog
 blog-assets
 blogs
 bonus
+brochure
 bucket
 bugbounty
 bugs
@@ -62,6 +64,7 @@ caches
 catalogue
 cc
 cdn
+client-images
 cloud
 cloudfront
 cloudtrail
@@ -96,6 +99,7 @@ contracts
 corporate
 coupon
 coupons
+css
 customers
 data
 data-warehouse
@@ -105,6 +109,7 @@ datawarehouse
 data_dump
 data_dumps
 db
+deals
 delivery-app-storage
 deliveryappstorage
 design
@@ -130,6 +135,8 @@ docker-registry
 docs
 documentation
 documents
+documents-prd
+documents-prod
 download
 downloads
 driver
@@ -151,6 +158,7 @@ engineering
 ent
 event
 events
+exe
 export
 exports
 file
@@ -197,6 +205,7 @@ invoices
 io
 ios
 jira
+js
 kafka
 kbfiles		
 kbfiles
@@ -209,7 +218,9 @@ lab
 labs
 lambda
 landing
+library
 linux
+live-eu
 loadbalancer
 loadforms
 local
@@ -244,12 +255,15 @@ mercurial
 misc
 mobile
 mysql
+navigator.content
 net
+news
 newsletter
 onboarding
 operations
 opinion
 ops
+org
 package
 packages
 page
@@ -267,15 +281,21 @@ photos-production
 pics
 picture
 pictures
+prep
 prerelease
 prereleases
 presentations
 private
+pro
 prod
+prod-joomla
 prod-live
 prod-sorted
+prod-static
+prod-wordpress
 product-logos
 production
+production-eu
 production-repository-file
 products
 profile-photo
@@ -315,6 +335,7 @@ s3connectortest
 s3log
 s3logs
 sandbox
+sales
 scdn
 screenshots
 search
@@ -340,6 +361,7 @@ static
 static-files
 statistics
 stats
+stitcher
 storage
 store
 storecontent
@@ -354,6 +376,7 @@ supportmedia
 supportmedia
 supportuploads		
 supportuploads
+sympoz
 temp
 templates
 temporary
@@ -379,6 +402,7 @@ updates
 upload
 uploads
 us
+usa
 user-asset
 user-assets
 usercontent
@@ -412,6 +436,7 @@ widget
 widgets
 windows
 wordpress
+wordpress-uploads
 wp
 wp-prd
 wp-uploads
