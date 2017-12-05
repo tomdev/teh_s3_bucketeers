@@ -100,6 +100,7 @@ corporate
 coupon
 coupons
 css
+customer-media
 customers
 data
 data-warehouse
@@ -334,8 +335,8 @@ s3-logs
 s3connectortest
 s3log
 s3logs
-sandbox
 sales
+sandbox
 scdn
 screenshots
 search
