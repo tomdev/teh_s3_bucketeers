@@ -78,6 +78,7 @@ cluster
 clusters
 cms
 cms-prod
+code
 code-repo
 com
 communities
@@ -109,6 +110,7 @@ datasets
 datawarehouse
 data_dump
 data_dumps
+dc
 db
 deals
 delivery-app-storage
@@ -116,6 +118,7 @@ deliveryappstorage
 design
 desk
 dev
+dev-my
 devcenter
 devel
 developer
@@ -154,12 +157,14 @@ email
 email-assets
 emails
 emoji
+en
 engineer
 engineering
 ent
 event
 events
 eu
+errors
 exe
 export
 exports
@@ -187,6 +192,7 @@ graphql
 graphql
 ha
 help
+helpful
 helpcenter		
 helpcenter
 helpcentre		
@@ -194,7 +200,10 @@ helpcentre
 helpmedia
 helpmedia
 html
+html5
 hub
+i
+io
 images
 img
 imgs
@@ -237,13 +246,13 @@ logexport
 logos
 logs
 logstash
+lp
 mac
 mail
 mails
 main
 main-storage
 map
-maps
 maps
 marketing
 marketing_assets
@@ -261,14 +270,18 @@ members
 mercurial
 misc
 mobile
+my
 mysql
 navigator.content
 net
 news
+null
 newsletter
 onboarding
 operations
 opinion
+open
+out
 ops
 org
 package
@@ -293,6 +306,7 @@ prerelease
 prereleases
 presentations
 private
+publish
 pro
 prod
 prod-joomla
@@ -310,12 +324,14 @@ profile-photos
 profiles
 project
 projects
+pwiki
 ps
 pt
 public
 publishing-cdn
 pubs-static
 qa
+raw
 rates
 react
 reference
@@ -336,6 +352,7 @@ retail
 retailer
 retailers
 ru
+s
 s2-pdfs
 s3
 s3-log
@@ -348,6 +365,7 @@ sandbox
 scdn
 screenshots
 search
+secure
 share
 shared
 shop
@@ -377,6 +395,7 @@ store
 storecontent
 streaming
 studio
+sync
 submission
 submissions
 subversion
@@ -426,6 +445,7 @@ vanitydevelopment
 vanityproduction
 vanitystaging
 video
+vip
 videos
 vm
 vms
@@ -447,6 +467,7 @@ webstatic
 widget
 widgets
 windows
+wiki
 wordpress
 wordpress-uploads
 wp
