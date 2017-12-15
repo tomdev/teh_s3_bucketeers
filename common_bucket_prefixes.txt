@@ -159,9 +159,11 @@ engineering
 ent
 event
 events
+eu
 exe
 export
 exports
+es
 file
 files
 fileserv
@@ -205,10 +207,12 @@ investors
 invoice
 invoices
 io
+il
 ios
 jenkins
 jira
 js
+jp
 kafka
 kbfiles
 kbfiles
