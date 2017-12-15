@@ -175,6 +175,7 @@ frontend
 galleries
 gallery
 games
+gb
 gemini
 general
 git
@@ -306,6 +307,7 @@ profiles
 project
 projects
 ps
+pt
 public
 publishing-cdn
 pubs-static
@@ -329,6 +331,7 @@ results
 retail
 retailer
 retailers
+ru
 s2-pdfs
 s3
 s3-log
@@ -368,6 +371,7 @@ stitcher
 storage
 store
 storecontent
+streaming
 studio
 submission
 submissions
@@ -406,6 +410,7 @@ upload
 uploads
 us
 usa
+uk
 user-asset
 user-assets
 usercontent
