@@ -63,6 +63,7 @@ cache
 caches
 catalogue
 cc
+cz
 cdn
 client-images
 cloud
@@ -111,6 +112,7 @@ datawarehouse
 data_dump
 data_dumps
 dc
+de
 db
 deals
 delivery-app-storage
