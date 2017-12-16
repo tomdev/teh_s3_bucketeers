@@ -11,6 +11,7 @@ angular
 ansible
 any
 api
+api-backup
 api-config
 api-configs
 api-production
@@ -139,6 +140,7 @@ doc
 docker
 docker-registry
 docs
+docs-assets
 documentation
 documents
 documents-prd
@@ -149,6 +151,7 @@ driver
 drivers
 dstore
 dump
+dumps
 ec2
 editions
 elasticache
@@ -203,6 +206,7 @@ helpcentre
 helpcentre
 helpmedia
 helpmedia
+hive
 html
 html5
 hub
@@ -294,6 +298,7 @@ page
 pages
 partner
 partners
+people
 pd
 pdf
 pdf-bucket
@@ -312,6 +317,8 @@ presentations
 private
 publish
 pro
+process-production
+process
 prod
 prod-joomla
 prod-live
@@ -396,6 +403,7 @@ stats
 stitcher
 storage
 store
+stories
 storecontent
 streaming
 studio
@@ -459,6 +467,7 @@ warehouse
 web
 web-assets
 web-data
+web-media
 web-static
 web2
 webapp
