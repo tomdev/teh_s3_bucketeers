@@ -158,6 +158,7 @@ email-assets
 emails
 emoji
 en
+es
 engineer
 engineering
 ent
@@ -177,6 +178,7 @@ filestore
 finance
 forum
 forums
+fr
 freebies
 frontend
 galleries
