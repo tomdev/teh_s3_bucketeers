@@ -390,6 +390,8 @@ results
 retail
 retailer
 retailers
+review
+reviews
 ru
 s
 s2-pdfs
