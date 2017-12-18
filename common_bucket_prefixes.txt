@@ -285,6 +285,7 @@ lease
 lease-images
 library
 linux
+live
 live-eu
 loadbalancer
 loadforms
@@ -338,6 +339,7 @@ other
 ops
 org
 out
+pay
 package
 packages
 page
