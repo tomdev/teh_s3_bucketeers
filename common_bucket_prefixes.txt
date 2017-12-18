@@ -419,6 +419,7 @@ signals
 site
 site-persistent-prod
 sitemap
+sitemap-production
 sitemaps
 sites
 sitestats
