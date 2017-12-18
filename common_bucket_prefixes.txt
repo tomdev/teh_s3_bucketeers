@@ -281,6 +281,8 @@ logs
 logstash
 lp
 mac
+magento
+magnolia
 mail
 mailstatic
 mails
@@ -417,12 +419,14 @@ secure
 share
 shared
 shop
+shopify
 shopifyapps
 shopping-cart
 shops
 signal
 signals
 site
+sitecore
 site-persistent-prod
 sitemap
 sitemap-production
@@ -514,6 +518,7 @@ vouchers
 vps
 warehouse
 web
+weebly
 web-assets
 web-data
 web-media
@@ -531,6 +536,7 @@ webstatic
 widget
 widgets
 wiki
+wix
 windows
 wordpress
 wordpress-media-assets
