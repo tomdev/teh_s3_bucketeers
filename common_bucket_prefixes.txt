@@ -10,6 +10,7 @@ alpha
 android
 angular
 ansible
+amp
 any
 api
 api-backup
@@ -70,6 +71,9 @@ cdn
 client-assets
 client-images
 cloud
+cloud-cdn
+cloud-storage-unabridged
+cloud-storage
 cloudfront
 cloudtrail
 cloudtrail-logs
@@ -87,6 +91,7 @@ code-repo
 com
 comm
 communities
+community
 company
 compose-attachments
 conference
@@ -94,6 +99,7 @@ conferencing
 confidential
 config
 configs
+connect
 consultant
 consultants
 consulting
@@ -158,6 +164,7 @@ download
 downloads
 driver
 drivers
+drupal
 dstore
 dump
 dumps
@@ -238,6 +245,7 @@ invoices
 io
 ios
 ja
+java
 jenkins
 jira
 jp
@@ -269,6 +277,7 @@ logstash
 lp
 mac
 mail
+mailstatic
 mails
 main
 main-storage
@@ -280,6 +289,7 @@ mat
 matrix
 maven
 media
+media-prod
 media-downloads
 media-upload
 media-uploads
@@ -301,6 +311,7 @@ onboarding
 open
 operations
 opinion
+other
 ops
 org
 out
@@ -316,6 +327,7 @@ pdf-bucket
 pdf-directory
 pdfs
 people
+php
 photo
 photos
 photos-production
@@ -335,6 +347,8 @@ prod-joomla
 prod-live
 prod-sorted
 prod-static
+prod-videos
+prod-video
 prod-wordpress
 product-logos
 production
@@ -416,6 +430,7 @@ static
 static-assets
 static-cache
 static-files
+staticfiles
 static-simple
 statistics
 stats
@@ -477,6 +492,7 @@ vanitydev
 vanitydevelopment
 vanityproduction
 vanitystaging
+vids
 video
 videos
 vip
@@ -495,6 +511,7 @@ webapp
 webassets
 webdata
 website
+webstore
 website-bucket
 websiteassets
 websites
