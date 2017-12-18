@@ -327,6 +327,7 @@ pdf-bucket
 pdf-directory
 pdfs
 people
+persistent-prod
 php
 photo
 photos
@@ -416,6 +417,7 @@ shops
 signal
 signals
 site
+site-persistent-prod
 sitemap
 sitemaps
 sites
