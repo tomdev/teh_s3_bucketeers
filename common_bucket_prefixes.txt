@@ -431,6 +431,7 @@ s3logs
 sales
 sandbox
 scdn
+school
 screenshots
 search
 secure
