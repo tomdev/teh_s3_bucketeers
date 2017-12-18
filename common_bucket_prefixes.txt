@@ -414,6 +414,7 @@ stage-my
 staging
 static
 static-assets
+static-cache
 static-files
 static-simple
 statistics
@@ -424,6 +425,9 @@ storage
 storage-prd
 store
 store-uk
+store-en
+store-us
+store-fr
 storecontent
 stories
 streaming
