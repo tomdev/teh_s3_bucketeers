@@ -427,6 +427,7 @@ stage
 stage-my
 staging
 static
+staticassets
 static-assets
 static-cache
 static-files
