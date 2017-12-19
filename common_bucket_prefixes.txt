@@ -60,6 +60,7 @@ beta
 betas
 billing
 binaries
+blobs
 blog
 blog-assets
 blog-files
