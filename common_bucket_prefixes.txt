@@ -84,6 +84,7 @@ caches
 catalogue
 cc
 cdn
+cdnjs
 client-assets
 client-images
 cloud
@@ -118,6 +119,7 @@ confidential
 config
 configs
 connect
+connection
 consultant
 consultants
 consulting
@@ -348,6 +350,7 @@ news
 newroom
 newsletter
 null
+no-cache
 onboarding
 open
 operations
@@ -380,6 +383,7 @@ picture
 pictures
 press
 plus
+platform
 prep
 prerelease
 prereleases
@@ -452,6 +456,7 @@ s3logs
 sales
 sandbox
 scdn
+scontent
 school
 screenshots
 search
