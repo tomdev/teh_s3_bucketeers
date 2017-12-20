@@ -177,6 +177,7 @@ development
 deveopers
 devops
 digital
+direct
 discount
 dist
 distribution
@@ -265,6 +266,7 @@ graphite
 graphql		
 graphql
 guide
+h
 ha
 header
 help
@@ -535,6 +537,8 @@ stage
 stage-my
 staging
 static
+static-images
+staticimages
 staticassets
 static-assets
 static-cache
@@ -628,6 +632,7 @@ web-forms
 web-media
 web-preroll
 web-static
+web-wordpress
 web2
 webapp
 webassets
