@@ -255,6 +255,7 @@ il
 images
 img
 imgs
+indirect
 infra
 internal
 intranet
