@@ -336,6 +336,7 @@ mediauploads
 member
 members
 mercurial
+metrics
 misc
 mobile
 my
@@ -377,6 +378,8 @@ photos-production
 pics
 picture
 pictures
+press
+plus
 prep
 prerelease
 prereleases
@@ -453,6 +456,7 @@ school
 screenshots
 search
 secure
+sentry
 share
 shared
 shop
@@ -463,6 +467,7 @@ shops
 signal
 signals
 site
+sip
 sitecore
 site-persistent-prod
 sitemap
@@ -509,6 +514,7 @@ supportmedia
 supportuploads
 sympoz
 sync
+tags
 tagging
 temp
 templates
@@ -558,10 +564,14 @@ vouchers
 vps
 warehouse
 web
+web1
+web2
 weebly
 wekit
+webmail
 web-assets
 web-data
+web-forms
 web-media
 web-preroll
 web-static
@@ -587,6 +597,10 @@ wp
 wp-prd
 wp-uploads
 www
+www1
+www2
+www3
+www4
 www-assets
 wwwcache
 zendesk
