@@ -198,6 +198,7 @@ email
 email-assets
 email-prod
 emails
+emma
 emoji
 en
 engineer
@@ -213,6 +214,7 @@ export
 exports
 faq
 file
+file-uploads
 files
 fileserv
 fileserver
