@@ -34,6 +34,8 @@ apps
 apt
 ass
 asset
+asset1
+asset2
 asset-manager
 asset-repository-prod
 assetmanager
@@ -68,6 +70,7 @@ blog-files2
 blogs
 bonus
 brochure
+broadband
 bucket
 bugbounty
 bugs
@@ -184,6 +187,8 @@ drupal
 dstore
 dump
 dumps
+dtp-static
+edev
 east1
 east2
 ec2
@@ -222,10 +227,12 @@ filestore
 finance
 forum
 forums
+footer
 fr
 freebies
 frontend
 gage
+gain
 galleries
 gallery
 games
@@ -238,6 +245,7 @@ graphite
 graphql		
 graphql
 ha
+header
 help
 helpcenter		
 helpcenter
@@ -292,6 +300,7 @@ library
 linux
 live
 live-eu
+lithium
 loadbalancer
 loadforms
 local
@@ -331,9 +340,11 @@ misc
 mobile
 my
 mysql
+nav
 navigator.content
 net
 news
+newroom
 newsletter
 null
 onboarding
@@ -375,6 +386,7 @@ pro
 process
 process-production
 prod
+prod-author
 prod-joomla
 prod-live
 prod-sorted
@@ -497,6 +509,7 @@ supportmedia
 supportuploads
 sympoz
 sync
+tagging
 temp
 templates
 temporary
