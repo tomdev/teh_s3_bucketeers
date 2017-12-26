@@ -35,6 +35,8 @@ app
 app-img
 apps
 apt
+artwork
+artwork-dev
 ass
 asset
 asset1
@@ -496,6 +498,7 @@ ru
 s
 s2-pdfs
 s3
+s3-sftp-bridge
 s3-log
 s3-logs
 s3connectortest
@@ -534,6 +537,7 @@ snapshots
 sp
 splunk
 spreadsheets
+stg-dr
 stage
 stage-my
 staging
@@ -574,6 +578,8 @@ sync
 tags
 tagging
 temp
+template-ireland
+template-us-east
 templates
 temporary
 terraform
@@ -663,4 +669,6 @@ www3
 www4
 www-assets
 wwwcache
+vsp-bucket
+vsp-dev-bucket
 zendesk
