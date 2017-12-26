@@ -161,6 +161,8 @@ db
 dc
 de
 deals
+delivery
+deliverys
 delivery-app-storage
 deliveryappstorage
 design
