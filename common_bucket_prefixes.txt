@@ -517,6 +517,7 @@ shopify
 shopifyapps
 shopping-cart
 shops
+software
 signal
 signals
 site
