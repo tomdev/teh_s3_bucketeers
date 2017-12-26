@@ -241,6 +241,7 @@ extranet-media
 extranet
 export
 exports
+fast
 faq
 file
 file-uploads
@@ -254,6 +255,8 @@ forums
 footer
 fr
 freebies
+friend
+friendbuy
 frontend
 gage
 gain
