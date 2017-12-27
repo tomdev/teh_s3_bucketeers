@@ -320,6 +320,9 @@ jenkins
 jira
 jp
 js
+js-sourcemaps-dev
+js-sourcemaps
+js-source
 kafka
 kbfiles
 kerberos
