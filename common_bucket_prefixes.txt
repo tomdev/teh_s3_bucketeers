@@ -41,6 +41,9 @@ ass
 asset
 asset1
 asset2
+asset3
+asset4
+asset5
 asset-manager
 asset-repository-prod
 assetmanager
