@@ -554,6 +554,7 @@ stg-dr
 stage
 stage-my
 staging
+staging-media
 static
 static-images
 staticimages
