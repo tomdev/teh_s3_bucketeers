@@ -675,6 +675,7 @@ wiki
 wix
 windows
 wordpress
+wordpress-storage
 wordpress-media-assets
 wordpress-prod-multisite-assets
 wordpress-uploads
