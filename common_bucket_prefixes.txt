@@ -27,6 +27,7 @@ administration
 administrator
 ads
 ads-live
+aduio
 alpha
 airways
 android
@@ -403,6 +404,7 @@ metrics
 misc
 mobile
 multisite-assets
+multisite-s3
 my
 mx
 mysql
@@ -485,6 +487,8 @@ production-eu
 production-uk
 production-ie
 production-hk
+production-data-us-east-1
+production-data-us-east-2
 production-repository-file
 products
 profile-photo
@@ -542,6 +546,8 @@ scdn
 scontent
 school
 screenshots
+sdk
+sdks
 search
 secure
 sentry
