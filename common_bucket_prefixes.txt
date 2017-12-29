@@ -613,11 +613,14 @@ temporary
 terraform
 terraformbinaries
 test
+testtest
 test-sandbox
 testassets
 theme
 themekit
 themes
+thumbnails
+thumbnail
 tickets
 tmp
 toolbelt
