@@ -58,6 +58,7 @@ asset-manager
 asset-repository-prod
 assetmanager
 assets
+assets-aem
 assets-portals
 attach
 attachment
@@ -103,6 +104,8 @@ catalogue
 campaign
 campaign-stage
 cc
+cbcdn1
+cbcdn2
 cdn
 cdn1
 cdn2
@@ -110,6 +113,8 @@ cdn3
 cdnjs
 client-assets
 client-images
+channels-lite-assets
+channels-assets
 cloud
 cloud-cdn
 cloud-storage-unabridged
@@ -345,6 +350,7 @@ lambda
 landing
 landingpages
 landing-pages
+layout
 lease
 lease-images
 library
@@ -411,6 +417,9 @@ no-cache
 nyc
 nz
 nz-assets
+oauth
+oauth-assets
+oauth-prod
 objects
 onboarding
 open
@@ -544,6 +553,7 @@ shopifyapps
 shopping-cart
 shops
 software
+software-cdn
 signal
 signals
 site
@@ -621,6 +631,10 @@ themekit
 themes
 thumbnails
 thumbnail
+thumbnails-01
+thumbnails-02
+thumbnails-03
+thumbnails-04
 tickets
 tmp
 toolbelt
@@ -696,6 +710,11 @@ wordpress-media-assets
 wordpress-prod-multisite-assets
 wordpress-uploads
 wp
+wpcdn
+wpcdn1
+wpcdn2
+wpcdn3
+wpcdn4
 wp-prd
 wp-uploads
 www
