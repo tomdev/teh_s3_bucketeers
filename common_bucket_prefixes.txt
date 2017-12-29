@@ -591,6 +591,9 @@ storecontent
 stories
 streaming
 studio
+style
+stylekit
+stylekit-branches
 submission
 submissions
 subversion
