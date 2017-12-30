@@ -200,6 +200,7 @@ development
 deveopers
 devops
 digital
+diamond
 direct
 discount
 dist
@@ -671,6 +672,7 @@ vanitydev
 vanitydevelopment
 vanityproduction
 vanitystaging
+vd
 vendor-assets
 vendor
 vids
