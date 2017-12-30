@@ -663,6 +663,8 @@ ts
 ts-cms
 ui
 uk
+uat
+uatdesign
 update
 updates
 upload
