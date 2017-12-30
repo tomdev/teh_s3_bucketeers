@@ -99,6 +99,7 @@ build
 builds
 bulletins
 business-prod
+ca
 cache
 caches
 catalogue
@@ -424,6 +425,7 @@ net
 news
 newroom
 newsletter
+nl
 null
 no-cache
 nyc
