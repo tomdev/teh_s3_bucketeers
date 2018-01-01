@@ -685,6 +685,7 @@ update
 updates
 upload
 uploads
+uploads-prod
 us
 us-east-1
 us-east-2
