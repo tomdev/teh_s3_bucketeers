@@ -62,6 +62,7 @@ assets-production
 asset-repository-prod
 assetmanager
 assets
+assets-origin-01
 assets-aem
 assets-portals
 attach
