@@ -306,6 +306,7 @@ gb
 gemini
 geodata
 general
+global
 git
 github
 graphite
