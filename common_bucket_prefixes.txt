@@ -50,6 +50,7 @@ apps
 apt
 artwork
 artwork-dev
+artists-assets
 ass
 asset
 asset1
@@ -516,6 +517,7 @@ production-data-us-east-1
 production-data-us-east-2
 production-repository-file
 products
+productimages
 profile-photo
 profile-photos
 profiles
@@ -526,6 +528,7 @@ ps-static
 ps-static-dev
 pt
 public
+public-bucket
 public-site-prod
 publish
 publishing-cdn
@@ -608,6 +611,7 @@ stage-my
 staging
 staging-media
 static
+static-cdn
 static-images
 staticimages
 staticassets
@@ -617,10 +621,12 @@ static-files
 static-media
 staticfiles
 static-simple
+static-assets-prod
 statistics
 stats
 source
 staff
+storefronts-production
 stickers
 stitcher
 storage
