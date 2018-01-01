@@ -618,6 +618,7 @@ store-fr
 storecontent
 stories
 streaming
+stream
 studio
 style
 stylekit
