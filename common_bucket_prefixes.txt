@@ -23,6 +23,7 @@ a5s
 accountbook
 ad
 admin
+admin-images
 administration
 administrator
 ads
@@ -55,7 +56,9 @@ asset2
 asset3
 asset4
 asset5
+asset-library
 asset-manager
+assets-production
 asset-repository-prod
 assetmanager
 assets
@@ -68,6 +71,7 @@ audio
 audit
 avatar
 avatar-live
+avatar-prod
 avatars
 aws
 aws-logs
@@ -144,6 +148,7 @@ cms2
 cmd-media
 cms-prod
 cms-public
+cms-upload
 code
 code-repo
 com
@@ -152,6 +157,7 @@ common
 common-prod
 communities
 community
+community-images-staging
 company
 compose-attachments
 conference
@@ -324,7 +330,10 @@ i
 il
 it
 image
+image-host
+image-hosting
 image-global
+images-staging
 images
 img
 imgs
@@ -600,6 +609,7 @@ staticassets
 static-assets
 static-cache
 static-files
+static-media
 staticfiles
 static-simple
 statistics
@@ -731,6 +741,7 @@ wordpress-storage
 wordpress-media-assets
 wordpress-prod-multisite-assets
 wordpress-uploads
+wrapper
 wp
 wpcdn
 wpcdn1
