@@ -348,6 +348,7 @@ internal
 intranet
 invalid
 inventory
+inventory-prod
 inventory-pics
 investor
 investors
@@ -732,6 +733,7 @@ web-forms
 web-media
 web-preroll
 web-static
+website-wp-media
 web-wordpress
 web2
 webapp
