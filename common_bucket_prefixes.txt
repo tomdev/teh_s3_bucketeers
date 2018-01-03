@@ -153,6 +153,7 @@ cmd-media
 cms-prod
 cms-public
 cms-upload
+cms_production
 code
 code-repo
 com
@@ -300,6 +301,8 @@ freebies
 friend
 friendbuy
 frontend
+ftp
+fs
 gage
 gain
 galleries
@@ -489,6 +492,7 @@ prep
 prerelease
 prereleases
 presentations
+previews
 private
 pro
 process
@@ -597,6 +601,8 @@ signals
 site
 sip
 sitecore
+site-code
+sitecode
 site-persistent-prod
 sitemap
 sitemap-production
@@ -612,6 +618,8 @@ stg-dr
 stage
 stage-my
 staging
+staging-1
+staging-2
 staging-media
 static
 static-cdn
@@ -666,6 +674,7 @@ temporary
 terraform
 terraformbinaries
 test
+team
 testtest
 test-sandbox
 testassets
@@ -765,12 +774,14 @@ wpcdn2
 wpcdn3
 wpcdn4
 wp-prd
+wpcontent
 wp-uploads
 www
 www1
 www2
 www3
 www4
+www_production
 www-assets
 wwwcache
 vsp-bucket
