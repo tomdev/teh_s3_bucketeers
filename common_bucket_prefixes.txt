@@ -458,6 +458,8 @@ objects
 onboarding
 open
 operations
+original
+original-content
 opinion
 other
 ops
@@ -717,6 +719,7 @@ usercontent
 users
 ux
 vagrant
+vault
 vanitydev
 vanitydevelopment
 vanityproduction
