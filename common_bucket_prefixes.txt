@@ -266,6 +266,7 @@ elasticsearch
 elb
 email
 email-assets
+email-cdn
 email-prod
 emails
 emma
