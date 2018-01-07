@@ -227,6 +227,7 @@ development
 deveopers
 devops
 digital
+digital-assets
 diamond
 direct
 discount
