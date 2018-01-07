@@ -390,6 +390,7 @@ lease-images
 library
 linux
 live
+live-assets
 live-gb
 live-us
 live-eu
