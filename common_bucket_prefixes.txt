@@ -152,6 +152,7 @@ clusters
 cms
 cms2
 cmd-media
+cms-assets
 cms-prod
 cms-public
 cms-upload
