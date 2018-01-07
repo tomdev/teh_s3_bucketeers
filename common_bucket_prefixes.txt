@@ -522,6 +522,7 @@ product-logos
 production
 productions
 production-data-us-east-1
+production-assets
 production-content
 production-au
 production-gb
