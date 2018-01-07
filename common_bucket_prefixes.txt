@@ -194,6 +194,8 @@ customer-media
 customers
 cz
 data
+dashboard-production
+dashboard
 data-warehouse
 dataset
 datasets
