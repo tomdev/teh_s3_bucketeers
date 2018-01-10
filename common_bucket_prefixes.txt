@@ -514,6 +514,7 @@ process
 process-production
 prod
 prod-author
+prod-assets
 prod-joomla
 prod-live
 prod-media
