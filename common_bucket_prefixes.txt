@@ -720,6 +720,8 @@ uatdesign
 ui
 ui-bundles-test
 uk
+unbounce-assets
+unbounce-assets-us
 update
 updates
 upload
