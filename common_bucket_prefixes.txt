@@ -277,6 +277,7 @@ emma
 emoji
 en
 engineer
+enterprise
 engineering
 ent
 errors
@@ -346,6 +347,7 @@ hub
 i
 il
 image
+image-cache
 image-global
 image-host
 image-hosting
@@ -502,6 +504,7 @@ picture
 pictures
 platform
 plus
+play
 prep
 prerelease
 prereleases
