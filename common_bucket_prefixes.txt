@@ -20,6 +20,7 @@
 a4l
 a5s
 ab
+about
 accountbook
 ad
 admin
@@ -84,10 +85,12 @@ awslogs
 backgrounds
 backup
 backups
+badges
 banner
 banners
 beta
 betas
+beacon
 billing
 binaries
 blobs
@@ -128,6 +131,7 @@ cdn2
 cdn3
 cdnjs
 cdnlssl
+cdn-widgets
 cf
 channels-assets
 channels-lite-assets
@@ -264,6 +268,7 @@ ecom
 ecom-prod
 edev
 editions
+editorassets
 elasticache
 elasticbeanstalk
 elasticsearch
@@ -294,6 +299,7 @@ exports
 extranet
 extranet-media
 external
+features
 faq
 fast
 file
@@ -383,6 +389,7 @@ js-source
 js-sourcemaps
 js-sourcemaps-dev
 kafka
+kb
 kbfiles
 kerberos
 keynote
@@ -399,6 +406,7 @@ lease
 lease-images
 library
 linux
+indigo
 lithium
 live
 live-assets
@@ -426,6 +434,7 @@ mails
 mailstatic
 main
 main-storage
+maroon
 map
 maps
 marketing
@@ -507,6 +516,7 @@ platform
 plus
 play
 prep
+prd
 prerelease
 prereleases
 presentations
@@ -538,6 +548,7 @@ production-content
 production-data-us-east-1
 production-data-us-east-2
 production-eu
+production-new
 production-gb
 production-hk
 production-ie
@@ -565,6 +576,7 @@ pwiki
 qa
 rates
 raw
+radar
 react
 reference
 registry
@@ -790,6 +802,7 @@ wiki
 windows
 wix
 wordpress
+wordpress-client-uploads
 wordpress-media-assets
 wordpress-prod-multisite-assets
 wordpress-storage
@@ -812,5 +825,6 @@ www3
 www4
 wwwcache
 www_production
+yellow
 zen
 zendesk
