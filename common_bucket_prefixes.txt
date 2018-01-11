@@ -555,6 +555,7 @@ ps-static
 ps-static-dev
 pt
 public
+public-site
 public-bucket
 public-site-prod
 publish
