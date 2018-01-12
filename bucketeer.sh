@@ -55,7 +55,7 @@ test_bucket() {
 
     if [[ $? == 0 ]]; then
         # Yay, we can list the bucket as unauthenticated user!
-        echo $bucket_name >> $RESULT_FILE
+        echo "https://$bucket_name.s3.amazonaws.com" >> $RESULT_FILE
     fi
     echo ""
   elif [[ $result == "200" ]]; then
@@ -65,7 +65,7 @@ test_bucket() {
 
     if [[ $? == 0 ]]; then
         # Yay, we can access the bucket as authenticated user!
-        echo $bucket_name >> $RESULT_FILE
+        echo "https://$bucket_name.s3.amazonaws.com" >> $RESULT_FILE
     fi
     echo ""
   fi
