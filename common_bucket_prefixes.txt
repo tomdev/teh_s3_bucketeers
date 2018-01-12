@@ -82,6 +82,7 @@ aws
 aws-logs
 awscloudtrail
 awslogs
+b2b
 backgrounds
 backup
 backups
@@ -438,6 +439,7 @@ main-storage
 maroon
 map
 maps
+marketo
 marketing
 marketing_assets
 mat
