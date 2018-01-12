@@ -305,6 +305,7 @@ fast
 file
 file-uploads
 files
+files-dev
 fileserv
 fileserver
 filestore
