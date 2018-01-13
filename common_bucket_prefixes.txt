@@ -619,6 +619,7 @@ s3log
 s3logs
 sales
 sandbox
+sandbox-b2bportal
 scdn
 school
 scontent
