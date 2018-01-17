@@ -87,6 +87,7 @@ aws-logs
 awscloudtrail
 awslogs
 b2b
+b2bportal
 backgrounds
 backup
 backups
