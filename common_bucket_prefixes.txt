@@ -571,6 +571,8 @@ profile-photos
 profiles
 project
 projects
+promo
+promounit-images
 ps
 ps-static
 ps-static-dev
