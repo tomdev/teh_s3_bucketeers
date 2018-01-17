@@ -196,6 +196,8 @@ contents
 contracts
 core
 corporate
+course-photos
+course
 coupon
 coupons
 css
