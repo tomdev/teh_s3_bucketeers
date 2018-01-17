@@ -762,6 +762,7 @@ us-west-2
 usa
 user-asset
 user-assets
+user-upload
 usercontent
 users
 ux
