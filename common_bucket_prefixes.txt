@@ -546,6 +546,7 @@ prod-live
 prod-media
 prod-sorted
 prod-static
+prod-tcp-lomo
 prod-upload
 prod-uploads
 prod-video
@@ -592,6 +593,8 @@ rates
 raw
 radar
 react
+recruitement
+recruitement-resources
 reference
 registry
 releases
