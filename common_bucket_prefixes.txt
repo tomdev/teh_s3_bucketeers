@@ -51,6 +51,7 @@ apollo
 app
 app-img
 apps
+appsimageshare
 apt
 aro
 artists-assets
