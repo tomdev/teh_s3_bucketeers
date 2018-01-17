@@ -142,6 +142,7 @@ channels-lite-assets
 click
 client-assets
 client-images
+clientdata
 clk
 cloud
 cloud-cdn
@@ -642,6 +643,7 @@ signal
 signals
 sip
 site
+sitedata
 site-code
 site-persistent-prod
 sitecode
