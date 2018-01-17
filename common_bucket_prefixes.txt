@@ -752,6 +752,8 @@ ui-bundles-test
 uk
 unbounce-assets
 unbounce-assets-us
+university
+university-assets
 update
 updates
 upload
