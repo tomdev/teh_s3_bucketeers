@@ -377,6 +377,7 @@ img
 imgs
 indirect
 infra
+instructor-photos
 internal
 intranet
 invalid
