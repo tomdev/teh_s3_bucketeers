@@ -814,6 +814,8 @@ webapp
 webassets
 webdata
 webmail
+webinar
+webinars
 website
 website-bucket
 website-wp-media
