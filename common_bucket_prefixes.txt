@@ -584,6 +584,7 @@ ps-static
 ps-static-dev
 pt
 public
+public-eu
 public-site
 public-bucket
 public-site-prod
