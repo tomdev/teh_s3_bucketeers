@@ -106,6 +106,7 @@ blog-assets
 blog-files
 blog-files2
 blogs
+bplans
 bonus
 broadband
 brochure
@@ -343,6 +344,7 @@ galleries
 gallery
 games
 gb
+getapi
 gemini
 general
 geodata
@@ -427,6 +429,7 @@ linux
 indigo
 lithium
 live
+liveplan
 live-assets
 live-eu
 live-gb
@@ -820,6 +823,7 @@ web2
 webapp
 webassets
 webdata
+webdev
 webmail
 webinar
 webinars
