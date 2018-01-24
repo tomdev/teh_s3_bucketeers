@@ -20,6 +20,7 @@
 a4l
 a5s
 ab
+action
 about
 accountbook
 ad
@@ -128,6 +129,7 @@ cbcdn1
 cbcdn2
 cc
 cdn
+cdn-cf
 cdn001
 cdn002
 cdn01
@@ -304,6 +306,7 @@ event
 eventfiles
 events
 exe
+etc
 export
 exports
 extranet
@@ -734,6 +737,7 @@ temporary
 terraform
 terraformbinaries
 test
+time
 test-sandbox
 testassets
 testtest
@@ -792,6 +796,7 @@ vd
 vendor
 vendor-assets
 video
+video-api
 videos
 vids
 vip
@@ -829,6 +834,7 @@ weebly
 wekit
 widget
 widgets
+widgets-test
 wiki
 windows
 wix
