@@ -91,6 +91,7 @@ b2b
 b2bportal
 backgrounds
 backup
+backuppc
 backups
 badges
 banner
@@ -111,6 +112,11 @@ bonus
 broadband
 brochure
 bucket
+bucket-2017
+bucket-development
+bucket-production
+bucket-staging
+bucket-test
 bugbounty
 bugs
 bugzilla
@@ -386,6 +392,7 @@ indirect
 infra
 instructor-photos
 internal
+integration-tests
 intranet
 invalid
 inventory
@@ -510,6 +517,7 @@ ops
 org
 original
 original-content
+originals-main
 other
 out
 outages
