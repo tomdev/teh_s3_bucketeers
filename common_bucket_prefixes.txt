@@ -285,6 +285,7 @@ dev-my
 dev-storage
 dev-website
 dev-website-s3
+dev-www-legacy
 dev2
 devcenter
 devel
@@ -717,6 +718,7 @@ projects
 promo
 promounit-images
 prototypes
+pqa-cloudfront-payment
 ps
 ps-static
 ps-static-dev
