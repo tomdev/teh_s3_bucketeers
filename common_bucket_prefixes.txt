@@ -564,6 +564,7 @@ mdg
 media
 media-com
 media-downloads
+media-server
 media-prod
 media-upload
 media-uploads
