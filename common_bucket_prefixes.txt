@@ -851,6 +851,7 @@ staging-2
 staging-media
 standards
 static
+static2cdn
 static-assets
 static-assets-prod
 static-cache
