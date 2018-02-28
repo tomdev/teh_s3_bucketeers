@@ -423,7 +423,6 @@ goobie
 graf
 graphite
 graphql
-graphql		
 grm
 gsi
 gti
@@ -869,6 +868,7 @@ stg-dr
 stickers
 stitcher
 storage
+storage-public-bucket
 storage-prd
 store
 store-en
