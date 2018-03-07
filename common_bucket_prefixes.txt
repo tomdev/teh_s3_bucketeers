@@ -373,6 +373,8 @@ events
 exe
 export
 exports
+experts
+expert
 exposed
 external
 extranet
