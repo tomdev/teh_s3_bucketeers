@@ -24,6 +24,7 @@ aaa
 ab
 about
 accountbook
+accenture
 action
 acv
 ad
@@ -269,6 +270,7 @@ datawarehouse
 db
 dc
 de
+deploy
 deals
 delivery
 delivery-app-storage
@@ -670,6 +672,7 @@ picture
 pictures
 pkn
 platform
+placeholder
 play
 plus
 polo
