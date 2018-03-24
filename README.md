@@ -21,7 +21,7 @@ git clone https://github.com/tomdev/teh_s3_bucketeers.git
 
 https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html#setup-credentials-setting
 
-Create an AWS account and set up your access tokens in ~./aws/credentials like this:
+Create an AWS account and set up your access tokens in ~/.aws/credentials like this:
 
 ```name=~/.aws/credentials
 [default]
