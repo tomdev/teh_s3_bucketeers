@@ -203,6 +203,7 @@ cdn2
 cdn3
 cdnjs
 cdnlssl
+cdnsource
 cds
 celebs
 certificate
@@ -227,6 +228,7 @@ cloud-storage
 cloud-storage-unabridged
 cloudfront
 cloudtrail
+cloudtrail-ec2
 cloudtrail-logs
 cloudtraillog
 cloudtraillogs
@@ -341,6 +343,7 @@ distributions
 distro
 dl
 dld
+dmp
 doc
 docker
 docker-registry
@@ -375,6 +378,7 @@ easy-wordpress
 ebookpie
 ebs
 ec2
+ec2-cloudtrail
 ecom
 ecom-prod
 ed
@@ -1009,8 +1013,11 @@ subversion
 suppliers
 support
 supportdocs
+spark-jobs
+shared-cache
 supportmedia
 supportuploads
+support-ticket-attachments
 swat
 swing
 swm
@@ -1038,6 +1045,7 @@ theme
 themekit
 themes
 things
+thirdparty-share
 thomas
 thumbnail
 thumbnails
