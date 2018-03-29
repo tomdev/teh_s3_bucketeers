@@ -18,21 +18,25 @@ fi
 
 AWS_CREDENTIALS_SETUP_DOCUMENTATION_URL="https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html#setup-credentials-setting"
 AWS_CREDENTIALS_FILE=~/.aws/credentials
+THREADS=20
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+NORMAL=$(tput sgr0)
 
 ensure_aws_credentials() {
-  if [[ ! -e $AWS_CREDENTIALS_FILE ]]; then
+  if [[ ! -e ${AWS_CREDENTIALS_FILE} ]]; then
     echo "Warning: Required AWS credential file ${AWS_CREDENTIALS_FILE} not found."
     echo ""
     echo "Documentation on how to set up these credentials can be found here:"
-    echo $AWS_CREDENTIALS_SETUP_DOCUMENTATION_URL
+    echo ${AWS_CREDENTIALS_SETUP_DOCUMENTATION_URL}
     exit 1
   fi
 }
 
 ensure_dependency_installed() {
-  dependency=$1
+  dependency=${1}
 
-  command -v $dependency >/dev/null
+  command -v ${dependency} >/dev/null
 
   if [[ "$?" -ne 0 ]]; then
     echo "Required dependency \"${dependency}\" not installed. Please install and retry."
@@ -41,70 +45,123 @@ ensure_dependency_installed() {
 }
 
 test_bucket() {
-  bucket_name=$1
+  bucket_name="${1}"
 
-  echo "testing $bucket_name"
+  #echo "testing $bucket_name"
 
-  result=$(curl -I $bucket_name.s3.amazonaws.com 2>/dev/null | head -n 1 | cut -d$' ' -f2)
+  result=$(curl -m 5 -s -o/dev/null -w '%{http_code}' -I http://${bucket_name}.s3.amazonaws.com)
 
-  if [[ $result == "403" ]]; then
-    echo "403: Unauthorized. Testing with authenticated user:"
-    echo "aws s3 ls s3://$bucket_name"
-
-    aws s3 ls s3://$bucket_name
+  if [[ ${result} == "403" ]]; then
+    aws s3 ls s3://${bucket_name} &>/dev/null
 
     if [[ $? == 0 ]]; then
-        # Yay, we can list the bucket as unauthenticated user!
-        echo "https://$bucket_name.s3.amazonaws.com" >> $RESULT_FILE
+        echo "[${GREEN}FOUND${NORMAL}] https://${bucket_name}.s3.amazonaws.com"
+        echo "https://${bucket_name}.s3.amazonaws.com" >> ${RESULT_FILE}
+    else
+        echo "[${RED}FOUND${NORMAL}] https://${bucket_name}.s3.amazonaws.com"
+
     fi
-    echo ""
   elif [[ $result == "200" ]]; then
-    echo "aws s3 ls s3://$bucket_name"
-
-    aws s3 ls s3://$bucket_name
-
-    if [[ $? == 0 ]]; then
-        # Yay, we can access the bucket as authenticated user!
-        echo "https://$bucket_name.s3.amazonaws.com" >> $RESULT_FILE
-    fi
-    echo ""
+    echo "[${GREEN}FOUND${NORMAL}] https://${bucket_name}.s3.amazonaws.com"
+    echo "https://${bucket_name}.s3.amazonaws.com" >> ${RESULT_FILE}
   fi
 }
 
 check_prefix() {
-  local bucket_part="$1"
+  local bucket_part="${1}"
+  
+  # from @nahamsec's lazys3
+  ENVIRONMENTS=(backup dev development stage s3 staging prod production test)
+  
+  # simple
+  test_bucket "${NAME}-${bucket_part}"
+  test_bucket "${NAME}.${bucket_part}"
+  test_bucket "${NAME}${bucket_part}"
+  
+  test_bucket "${bucket_part}-${NAME}"
+  test_bucket "${bucket_part}.${NAME}"
+  test_bucket "${bucket_part}${NAME}"
+  
+  for ENV in ${ENVIRONMENTS[@]}; do
+    test_bucket "${NAME}-${bucket_part}-${ENV}"
+    test_bucket "${NAME}-${bucket_part}.${ENV}"
+    test_bucket "${NAME}-${bucket_part}${ENV}"
+    test_bucket "${NAME}.${bucket_part}-${ENV}"
+    test_bucket "${NAME}.${bucket_part}.${ENV}"
+    
+    test_bucket "${NAME}-${ENV}-${bucket_part}"
+    test_bucket "${NAME}-${ENV}.${bucket_part}"
+    test_bucket "${NAME}-${ENV}${bucket_part}"
+    test_bucket "${NAME}.${ENV}-${bucket_part}"
+    test_bucket "${NAME}.${ENV}.${bucket_part}"
+    
+    test_bucket "${bucket_part}-${NAME}-${ENV}"
+    test_bucket "${bucket_part}-${NAME}.${ENV}"
+    test_bucket "${bucket_part}-${NAME}${ENV}"
+    test_bucket "${bucket_part}.${NAME}-${ENV}"
+    test_bucket "${bucket_part}.${NAME}.${ENV}"
 
-  test_bucket "$NAME-$bucket_part"
-  test_bucket "$NAME-s3-$bucket_part"
-  test_bucket "$bucket_part-$NAME"
-  test_bucket "$NAME.$bucket_part"
-  test_bucket "$bucket_part.$NAME"
-  test_bucket "$NAME$bucket_part"
-  test_bucket "$bucket_part$NAME"
-  test_bucket "$bucket_part.$NAME.com"
-  test_bucket "$bucket_part-s3-$NAME"
-  test_bucket "$NAME-s3-$bucket_part"
-  test_bucket "$bucket_part-production.$NAME.com"
+    test_bucket "${bucket_part}-${ENV}-${NAME}"
+    test_bucket "${bucket_part}-${ENV}.${NAME}"
+    test_bucket "${bucket_part}-${ENV}${NAME}"
+    test_bucket "${bucket_part}.${ENV}-${NAME}"
+    test_bucket "${bucket_part}.${ENV}.${NAME}"
+
+    test_bucket "${ENV}-${NAME}-${bucket_part}"
+    test_bucket "${ENV}-${NAME}.${bucket_part}"
+    test_bucket "${ENV}-${NAME}${bucket_part}"
+    test_bucket "${ENV}.${NAME}-${bucket_part}"
+    test_bucket "${ENV}.${NAME}.${bucket_part}"
+    
+    test_bucket "${ENV}-${bucket_part}-${NAME}"
+    test_bucket "${ENV}-${bucket_part}.${NAME}"
+    test_bucket "${ENV}-${bucket_part}${NAME}"
+    test_bucket "${ENV}.${bucket_part}-${NAME}"
+    test_bucket "${ENV}.${bucket_part}.${NAME}"
+  done
 }
 
 print_results() {
-  if [[ -e $RESULT_FILE ]]; then
-    NR_OF_RESULTS=$(cat $RESULT_FILE | wc -l)
+  if [[ -s ${RESULT_FILE} ]]; then
+    NR_OF_RESULTS=$(wc -l ${RESULT_FILE} | awk '{print $1}')
   else
     NR_OF_RESULTS=0
   fi
 
   echo ""
-  echo "Scanning done. Found $NR_OF_RESULTS results."
+  echo "Scanning done. Found ${NR_OF_RESULTS} results."
+}
+
+open_sem() {
+  mkfifo pipe-$$
+  exec 3<>pipe-$$
+  rm -f pipe-$$
+  local i=$1
+  for ((; i > 0; i--)); do
+      printf %s 000 >&3
+  done
+}
+
+run_with_lock() {
+    local x
+    read -u 3 -n 3 x && ((0==x)) || exit $x
+    (
+      "$@"
+      printf '%.3d' $? >&3
+    )&
 }
 
 ensure_dependency_installed aws
 ensure_aws_credentials
 
-for NAME in $@
+for NAME in ${@}
 do
-  RESULT_FILE="results-$NAME-$(date +%Y-%m-%d_%H:%M).txt"
-  test_bucket $NAME
-  while read line ; do check_prefix $line ; done < ./common_bucket_prefixes.txt
+  RESULT_FILE="results-${NAME}-$(date +%Y-%m-%d_%H:%M).txt"
+  test_bucket ${NAME}
+
+  open_sem ${THREADS}
+  while read line; do
+    run_with_lock check_prefix ${line}
+  done < ./common_bucket_prefixes.txt
   print_results
 done
