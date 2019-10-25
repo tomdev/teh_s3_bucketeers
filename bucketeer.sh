@@ -49,7 +49,7 @@ test_bucket() {
 
   #echo "testing $bucket_name"
 
-  result=$(curl -m 5 -s -o/dev/null -w '%{http_code}' -I http://${bucket_name}.s3.amazonaws.com)
+  result=$(curl -m 5 -s -X 'GET' -o/dev/null -w '%{http_code}' -I http://${bucket_name}.s3.amazonaws.com/?max-keys=1)
 
   if [[ ${result} == "403" ]]; then
     aws s3 ls s3://${bucket_name} &>/dev/null
