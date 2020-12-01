@@ -51,15 +51,16 @@ test_bucket() {
 
   result=$(curl -m 5 -s -X 'GET' -o/dev/null -w '%{http_code}' -I http://${bucket_name}.s3.amazonaws.com/?max-keys=1)
 
-  if [[ ${result} == "403" ]]; then
-    aws s3 ls s3://${bucket_name} &>/dev/null
-
+  if [[ ${result} == "403" || ${result} == "404" ]]; then
+    aws s3 ls s3://${bucket_name} &> aws.txt;
     if [[ $? == 0 ]]; then
-        echo "[${GREEN}FOUND${NORMAL}] https://${bucket_name}.s3.amazonaws.com"
+        echo "[${GREEN}FOUND${NORMAL}] https://${bucket_name}.s3.amazonaws.com";
         echo "https://${bucket_name}.s3.amazonaws.com" >> ${RESULT_FILE}
     else
-        echo "[${RED}FOUND${NORMAL}] https://${bucket_name}.s3.amazonaws.com"
-
+        cat aws.txt | grep -E -q "AccessDenied|AllAccessDisabled";
+        if [[ $? == 0 ]]; then
+            echo "[${RED}FOUND${NORMAL}] https://${bucket_name}.s3.amazonaws.com";
+        fi
     fi
   elif [[ $result == "200" ]]; then
     echo "[${GREEN}FOUND${NORMAL}] https://${bucket_name}.s3.amazonaws.com"
@@ -69,32 +70,32 @@ test_bucket() {
 
 check_prefix() {
   local bucket_part="${1}"
-  
+
   # from @nahamsec's lazys3
   ENVIRONMENTS=(backup dev development stage s3 staging prod production test)
-  
+
   # simple
   test_bucket "${NAME}-${bucket_part}"
   test_bucket "${NAME}.${bucket_part}"
   test_bucket "${NAME}${bucket_part}"
-  
+
   test_bucket "${bucket_part}-${NAME}"
   test_bucket "${bucket_part}.${NAME}"
   test_bucket "${bucket_part}${NAME}"
-  
+
   for ENV in ${ENVIRONMENTS[@]}; do
     test_bucket "${NAME}-${bucket_part}-${ENV}"
     test_bucket "${NAME}-${bucket_part}.${ENV}"
     test_bucket "${NAME}-${bucket_part}${ENV}"
     test_bucket "${NAME}.${bucket_part}-${ENV}"
     test_bucket "${NAME}.${bucket_part}.${ENV}"
-    
+
     test_bucket "${NAME}-${ENV}-${bucket_part}"
     test_bucket "${NAME}-${ENV}.${bucket_part}"
     test_bucket "${NAME}-${ENV}${bucket_part}"
     test_bucket "${NAME}.${ENV}-${bucket_part}"
     test_bucket "${NAME}.${ENV}.${bucket_part}"
-    
+
     test_bucket "${bucket_part}-${NAME}-${ENV}"
     test_bucket "${bucket_part}-${NAME}.${ENV}"
     test_bucket "${bucket_part}-${NAME}${ENV}"
@@ -112,7 +113,7 @@ check_prefix() {
     test_bucket "${ENV}-${NAME}${bucket_part}"
     test_bucket "${ENV}.${NAME}-${bucket_part}"
     test_bucket "${ENV}.${NAME}.${bucket_part}"
-    
+
     test_bucket "${ENV}-${bucket_part}-${NAME}"
     test_bucket "${ENV}-${bucket_part}.${NAME}"
     test_bucket "${ENV}-${bucket_part}${NAME}"
