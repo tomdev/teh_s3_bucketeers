@@ -40,6 +40,7 @@ You can test multiple targets at the same time, use a space as a delimiter.
 
 A result file named `results-<target>-<timestamp>.txt` will be created when an accessible bucket has been found.
 
+:warning:  If you are using this tool for penetration testing you must get [prior approval from AWS](https://aws.amazon.com/security/penetration-testing/).
 
 ## Contributing
 
